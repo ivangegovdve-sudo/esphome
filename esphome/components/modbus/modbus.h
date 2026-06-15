@@ -34,7 +34,7 @@ struct ModbusDeviceCommand {
   }
 };
 
-class Modbus : public uart::UARTDevice, public Component {
+class Modbus final : public uart::UARTDevice, public Component {
  public:
   Modbus() = default;
 
